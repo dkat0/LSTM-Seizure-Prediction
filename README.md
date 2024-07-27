@@ -54,7 +54,7 @@ The models are trained using the following techniques:
 The best performing models for RNN, LSTM, and GRU are selected based on validation accuracy. The results demonstrate high accuracy and robustness in detecting seizures from EEG data.
 
 ### Best Accuracies
-- **Best RNN Accuracy**: 0.83125
+- **Best RNN Accuracy**: 0.85
 - **Best LSTM Accuracy**: 0.975
 - **Best GRU Accuracy**: 0.96875
 

@@ -16,7 +16,7 @@ class SeizurePredictionModel(HyperModel):
         self.random_seed = random_seed
         self.early_stopping = EarlyStopping(
             monitor='val_loss',
-            patience=5,
+            patience=7,
             restore_best_weights=True
         )
         self._set_random_seed()
@@ -162,7 +162,8 @@ class SeizurePredictionModel(HyperModel):
             objective='val_accuracy',
             max_trials=10,
             executions_per_trial=1,
-            directory=f'tuner_{model_type.lower()}'
+            directory=f'tuner_{model_type.lower()}',
+            project_name='seizure-prediction'
         )
         tuner.search(x_train, y_train, epochs=20, validation_data=(x_test, y_test), callbacks=[self.early_stopping])
         
