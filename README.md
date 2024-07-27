@@ -11,8 +11,6 @@ This project focuses on detecting epileptic seizures from EEG data using advance
 - [Training and Evaluation](#training-and-evaluation)
 - [Results](#results)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 Epilepsy is a chronic neurological disorder characterized by recurrent seizures, and accurate detection of seizures from EEG data can significantly improve patient care and management. This project aims to build robust deep learning models to detect seizures from EEG signals, leveraging state-of-the-art techniques in model building and hyperparameter optimization.
