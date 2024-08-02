@@ -21,7 +21,7 @@ Epilepsy is a chronic neurological disorder characterized by recurrent seizures,
 - **Hyperparameter Tuning**: Utilizing Keras Tuner for hyperparameter optimization to find the best model configurations.
 - **Early Stopping**: Preventing overfitting by stopping training when validation loss stops improving.
 - **Visualization**: Plotting EEG sequences and training/validation accuracy over epochs.
-- **Evaluation**: Comprehensive model evaluation using accuracy, ROC curves, and other relevant metrics.
+- **Evaluation**: Comprehensive model evaluation using validation accuracy.
 
 ## Data Preparation
 The EEG data is sourced from the [UCI Epileptic Seizure Recognition dataset](https://archive.ics.uci.edu/ml/datasets/Epileptic+Seizure+Recognition). The data preprocessing steps include:
@@ -51,7 +51,7 @@ The models are trained using the following techniques:
 ## Results
 The best performing models for RNN, LSTM, and GRU are selected based on validation accuracy. The results demonstrate high accuracy and robustness in detecting seizures from EEG data.
 
-### Best Accuracies
+### Best Validation Accuracies
 - **Best RNN Accuracy**: 0.85
 - **Best LSTM Accuracy**: 0.975
 - **Best GRU Accuracy**: 0.96875
